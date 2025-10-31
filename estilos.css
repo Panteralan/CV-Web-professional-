@@ -1,0 +1,347 @@
+/* Reset y estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+figure img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #343a40;
+  padding-bottom: 5px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #495057;
+  margin-bottom: 10px;
+}
+
+p, li {
+  margin-bottom: 10px;
+}
+
+/* Header y navegación */
+header {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+.experiencia-card {
+  background: #f8f9fa;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Carrusel dentro de experiencia-card */
+.experiencia-card .carrusel-container {
+  position: relative;
+  max-width: 100%;
+  margin: 20px 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.experiencia-card .carrusel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 700px; /* Altura fija para consistencia */
+}
+
+.experiencia-card .carrusel-slide {
+  min-width: 100%;
+  position: center;
+}
+
+.experiencia-card .carrusel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Mantiene proporciones de la imagen */
+}
+
+.experiencia-card .carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.9);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.experiencia-card .carrusel-btn:hover {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.experiencia-card .anterior { left: 15px; }
+.experiencia-card .siguiente { right: 15px; }
+
+.experiencia-card .carrusel-indicadores {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.experiencia-card .indicador {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.6);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.experiencia-card .indicador.active {
+  background: white;
+  transform: scale(1.2);
+}
+
+
+/* Cards de experiencia y certificaciones */
+.experiencia-card, #Certificaciones {
+  background-color: #fff;
+  border-left: 4px solid #343a40;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#Certificaciones a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#Certificaciones a:hover {
+  text-decoration: underline;
+}
+
+/* Listas */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+ul li ul {
+  list-style-type: circle;
+  margin-top: 5px;
+}
+
+/* Proyectos */
+#Proyectos ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#Proyectos ul li {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#Proyectos ul li a {
+  text-decoration: none;
+}
+
+
+#Proyectos ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contacto */
+#Contacto p, #Contacto a {
+  font-size: 1rem;
+}
+
+#Contacto a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+#Contacto a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+#Perfil figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px; /* o la altura que necesites */
+  margin: 10 0px 0;
+}
+
+#Perfil figure img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+
+
+#portafolio {
+  padding: 40px 0;
+}
+
+.portafolio-intro {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.proyectos-destacados {
+  margin-bottom: 40px;
+}
+
+.proyecto-card {
+  display: flex;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  align-items: center;
+}
+
+.proyecto-card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.proyecto-info h4 {
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.proyecto-info p {
+  margin: 5px 0;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.proyecto-mini {
+  text-align: center;
+}
+
+.proyecto-mini img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.proyecto-mini p {
+  font-size: 0.8em;
+  margin: 5px 0 0 0;
+}
