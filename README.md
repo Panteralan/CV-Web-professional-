@@ -12,9 +12,9 @@ Educador tecnológico y desarrollador especializado en programación, robótica 
 ## 🎯 Proyectos Destacados
 | Proyecto | Tecnologías | Descripción |
 |----------|-------------|-------------|
-| [WSDH Robot]([enlace](https://panteralan.github.io/CV-Web-professional-/)) | Micro:bit, Scratch, Lego | Sistema de riego automatizado con sensor de humedad |
-| [Medidor de Rampas]([enlace](https://panteralan.github.io/CV-Web-professional-/)) | Scratch, STEAM | Verificación de normativas de accesibilidad |
-| [Robot Pintor Ceibal]([enlace](https://panteralan.github.io/CV-Web-professional-/)) | Lego Wedo, Scratch | Robot controlable para expresión artística |
+| [WSDH Robot](https://panteralan.github.io/CV-Web-professional-/) | Micro:bit, Scratch, Lego | Sistema de riego automatizado con sensor de humedad |
+| [Medidor de Rampas](https://panteralan.github.io/CV-Web-professional-/) | Scratch, STEAM | Verificación de normativas de accesibilidad |
+| [Robot Pintor Ceibal](https://panteralan.github.io/CV-Web-professional-/) | Lego Wedo, Scratch | Robot controlable para expresión artística |
 
 ## 📫 Contacto
 - 📧 Email: aplaceres28835@gmail.com
